@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F4F8F7;
+}
+
+.container {
+    display: inline;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    margin: 10% 20%;
+    height: 350px;
+    box-shadow: 0 9px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.form-left {
+    flex-basis: 35%;
+    border-radius: 10px 0px 0px 10px;
+    background-color: #3CB397;
+    text-align: center;
+    font-size: 18pt;
+    letter-spacing: 10px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-header>h2 {
+    color: #3CB397;
+    letter-spacing: 2px;
+}
+
+.form-right {
+    flex-basis: 65%;
+    border-radius: 0px 10px 10px 0px;
+    padding: 20px 60px;
+    background-color: white;
+}
+
+.form-control>input {
+    width: 98%;
+    padding: 15px 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: #F4F8F7;
+    border: none;
+}
+
+.form-control>input:focus {
+    outline: none;
+    border-left: 4px solid #3CB397;
+}
+
+.button-login {
+    border: none;
+    background-color: #3CB397;
+    color: whitesmoke;
+    width: 98%;
+    padding: 20px 20px;
+    margin-top: 20px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#login-alert-username{
+    color: red;
+}
+
+.button-login:focus,
+.button-login:hover {
+    outline: none;
+    background-color: #31917a;
+}
+
+@media screen and (max-width: 740px) {
+    .form-left {
+        display: none;
+    }
+}
